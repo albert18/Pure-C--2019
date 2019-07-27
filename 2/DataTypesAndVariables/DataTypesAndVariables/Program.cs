@@ -62,7 +62,7 @@ namespace DataTypesAndVariables
             #endregion
 
             #region Constants
-            //const cannot be change
+            //const cannot be change or be assign
             //const int days = 365;
 
             //days = 366; 
