@@ -30,12 +30,28 @@ namespace Loops
             #region Do While
             //Reading the code first before condition
             int counter = 0;
-            do
-            {
-                Console.WriteLine(counter);
-                counter++;
-            } while (counter < 5);
-            Console.Read();
+            int lengthOfText = 0;
+            string wholeText = "";
+
+            //do
+            //{
+            //   Console.WriteLine(counter);
+            //    counter++;
+            //} while (counter < 5);
+            //Console.Read();
+
+            ////checked the lenght of the string
+            //do
+            //{
+            //    Console.WriteLine("Please enter the name of a friend!");
+            //    string nameOfAFriend = Console.ReadLine();
+            //    int currentLength = nameOfAFriend.Length;
+            //    lengthOfText += currentLength;
+            //    wholeText += nameOfAFriend;
+
+            //} while (lengthOfText < 5);
+            //Console.WriteLine("That was enought!! " + wholeText);
+            //Console.Read();
             #endregion
 
         }
