@@ -12,7 +12,6 @@ namespace Loops
         {
             //for, foreach, while loop and do while
 
-
             #region For Loop
             //for (int initial = 0; initial < 10; initial++)
             //{
@@ -29,9 +28,9 @@ namespace Loops
 
             #region Do While
             //Reading the code first before condition
-            int counter = 0;
-            int lengthOfText = 0;
-            string wholeText = "";
+            //int counter = 0;
+            //int lengthOfText = 0;
+            //string wholeText = "";
 
             //do
             //{
@@ -51,6 +50,17 @@ namespace Loops
 
             //} while (lengthOfText < 5);
             //Console.WriteLine("That was enought!! " + wholeText);
+            //Console.Read();
+            #endregion
+
+            #region While 
+            //Check first for does anything
+            //int counter = 0;
+            //while (counter < 10)
+            //{
+            //    Console.WriteLine(counter);
+            //    counter++;
+            //}
             //Console.Read();
             #endregion
 
