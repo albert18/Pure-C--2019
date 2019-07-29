@@ -26,10 +26,10 @@ namespace Arrays
             //Console.Read();
 
             //second way
-            int[] gradeOfMath = { 12, 412, 515, 1123 };
+            //int[] gradeOfMath = { 12, 412, 515, 1123 };
 
-            //thrid way
-            int[] gradeOfMathOtherStudent = new int[] { 12, 412, 515, 1123 };
+            ////thrid way
+            //int[] gradeOfMathOtherStudent = new int[] { 12, 412, 515, 1123 };
 
 
             //Console.WriteLine(gradeOfMath.Length);
@@ -42,17 +42,45 @@ namespace Arrays
             #endregion
 
             #region Arrays with for each loop
-            int[] nums = new int[10];
-            for (int i = 0; i < 10; i++)
+            //int[] nums = new int[10];
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    nums[i] = i;
+            //}
+
+            //for (int j = 0; j < 10; j++)
+            //{
+            //    Console.WriteLine("{0}, {1}",j, nums[j]);
+            //}
+            #endregion
+
+            int[] studentsGrade = new int[] { 1, 2, 3, 4, 5 };
+            double averageResult = GetAverate(studentsGrade);
+
+            foreach (int grade in studentsGrade)
             {
-                nums[i] = i;
+                Console.WriteLine("{0}", grade);
             }
 
-            for (int j = 0; j < 10; j++)
+            Console.WriteLine("Result {0}", averageResult);
+            Console.Read();
+
+
+        }
+
+        static double GetAverate(int[] gradesArrat)
+        {
+            int size = gradesArrat.Length;
+            double average;
+            int sum = 0;
+
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine("{0}, {1}",j, nums[j]);
+                sum += gradesArrat[i];
             }
-            #endregion
+            average = (double)sum / size;
+            return average;
+
         }
     }
 }
