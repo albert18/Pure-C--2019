@@ -25,14 +25,17 @@ namespace OOP
             //Console.ReadKey(); 
             #endregion
 
-            Box box = new Box();
-            box.length = 5;
-            box.height = 3;
-            box.width = 4;
+            #region part 2 - Properties
 
-            box.DisplayInfo();
+            //Box box = new Box();
+            //box.length = 5;
+            //box.height = 3;
+            //box.width = 4;
 
-            Console.Read();
+            //box.DisplayInfo();
+
+            //Console.Read(); 
+            #endregion
         }
     }
 }
