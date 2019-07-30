@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -67,22 +68,48 @@ namespace Arrays
             //Console.Read(); 
             #endregion
 
+            #region ArrayList
+            //ArrayList myArray = new ArrayList();
+            //ArrayList myArray2 = new ArrayList(100);
 
-        }
+            //myArray.Add(123);
+            //myArray.Add(1234);
+            //myArray.Add(1235);
+            //myArray.Add("dsadasdsa");
 
-        static double GetAverate(int[] gradesArrat)
-        {
-            int size = gradesArrat.Length;
-            double average;
-            int sum = 0;
+            ////delete element with specific value
+            //myArray.Remove(123);
 
-            for (int i = 0; i < size; i++)
+            ////delete element specific position
+            //myArray.RemoveAt(1);
+
+            //Console.WriteLine(myArray.Count);
+
+            //----------------------------------------------
+            foreach (object obj in myArray)
             {
-                sum += gradesArrat[i];
+                Console.WriteLine("This is some test {0}", obj);
             }
-            average = (double)sum / size;
-            return average;
 
+            Console.Read();
+            #endregion
         }
+
+        #region GetAverate
+        //static double GetAverate(int[] gradesArrat)
+        //{
+        //    int size = gradesArrat.Length;
+        //    double average;
+        //    int sum = 0;
+
+        //    for (int i = 0; i < size; i++)
+        //    {
+        //        sum += gradesArrat[i];
+        //    }
+        //    average = (double)sum / size;
+        //    return average;
+
+        //} 
+        #endregion
     }
 }
