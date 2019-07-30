@@ -8,6 +8,8 @@ namespace Inheritance_and_more_about_OOP
 {
     class Post
     {
+
+        private static int currentPostId;
         // properties
         protected int ID { get; set; }
         protected string Title { get; set; }
