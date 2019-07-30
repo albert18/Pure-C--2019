@@ -54,16 +54,18 @@ namespace Arrays
             //}
             #endregion
 
-            int[] studentsGrade = new int[] { 1, 2, 3, 4, 5 };
-            double averageResult = GetAverate(studentsGrade);
+            #region Arrays Parameter
+            //int[] studentsGrade = new int[] { 1, 2, 3, 4, 5 };
+            //double averageResult = GetAverate(studentsGrade);
 
-            foreach (int grade in studentsGrade)
-            {
-                Console.WriteLine("{0}", grade);
-            }
+            //foreach (int grade in studentsGrade)
+            //{
+            //    Console.WriteLine("{0}", grade);
+            //}
 
-            Console.WriteLine("Result {0}", averageResult);
-            Console.Read();
+            //Console.WriteLine("Result {0}", averageResult);
+            //Console.Read(); 
+            #endregion
 
 
         }
