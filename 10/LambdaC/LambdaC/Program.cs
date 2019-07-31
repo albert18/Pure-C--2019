@@ -27,6 +27,16 @@ namespace LambdaC
 
         public static void DoSomething()
         {
+            ///////////////////////// TEST
+            var numbers1 = new List<int>();
+            var numbers = new List<int>{ 1,2,3,4,5};
+            numbers1.Add(8);
+            numbers1.Remove(0);
+
+
+            ///////////////////////// TEST
+
+
             SomeMath math = new SomeMath(TimesTen);
             Console.WriteLine(math(8));
 
@@ -49,13 +59,13 @@ namespace LambdaC
                 }
             );
 
-            math = new SomeMath(x => x*x*x);
+            math = new SomeMath(x => x * x * x);
             Console.WriteLine(math(8));
 
             Compare comp = (a, number) => a == number.n;
             Console.WriteLine(comp(5, new Number { n = 5 }));
 
-            
+
 
         }
 
