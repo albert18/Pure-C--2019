@@ -16,6 +16,8 @@ namespace cSharp
     //Which one of the following Datatypes is not considered as "primitive"? - STRING
     //Correct. String is a Class and not a primitive Datatype.It's still a Datatype, thou. It's basically containing multiple Characters.
 
+    //Const are immutable values which are know at compile time and do not change for the life of the program.
+
 
 
 
@@ -25,10 +27,11 @@ namespace cSharp
         //myInt = (int) myDouble;
         //Console.WriteLine(myInt);
 
-    //Parsing string to int
+        //Parsing string to int
         //string myString = "15";
         //int myInt = Int32.Parse(myString);
         //Console.WriteLine(myInt);
+
 
 
     #endregion
