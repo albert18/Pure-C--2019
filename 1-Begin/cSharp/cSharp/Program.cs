@@ -55,6 +55,22 @@ namespace cSharp
     #endregion
 
     #region Making Decision
+    //On a single If-Else-Statement: How many different cases are handled? - One Specific case and one default case
+    //What Datatype is necessary for an If-Statement to make decisions? - Booleans do the job
+    //An If-Statement within an If-Statement is called. -- Nested
+
+
+    //Sample Code
+    //string number = "128sd";
+    //int parseValue;
+    //bool success = int.TryParse(number, out parseValue);
+    //Console.WriteLine(success);
+    #endregion
+
+    #region Loop
+
+
+
 
     #endregion
 
@@ -64,7 +80,8 @@ namespace cSharp
 
         static void Main(string[] args)
         {
-                    
+
+
 
 
         }
