@@ -107,6 +107,12 @@ namespace cSharp
     //List<int> list = new List<int> { 1, 2, 3, 4, 5 };
     #endregion
 
+    #region Inheritance - allows us to define a class in terms of another class, which makes it easier to create and maintain an application.
+
+
+
+    #endregion
+
 
 
 
