@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -69,21 +70,56 @@ namespace cSharp
 
     #region Loop
 
+    ////int counter = 0;
 
+    ////do
+    ////{
+    ////    Console.WriteLine(counter);
+    ////    counter++;
+    ////} while (counter < 5);
+
+    ////while (counter < 10)
+    ////{
+    ////    Console.WriteLine(counter);
+    ////    counter++;
+    ////}
+
+    //Console.ReadLine();
 
 
     #endregion
 
+    #region Arrays
+    //Array - storefixed size sequential collection of elements
+    //In an array, every element has the same - data Type
+
+
+
+
+    //Sample Code
+
+    //ArrayList myArrayList = new ArrayList();
+    ////ArrayList myArrayList = new ArrayList(100); ways to declare array list
+    //myArrayList.Add(25);
+    //myArrayList.Add("Hello");
+
+
+    //List<int> list = new List<int> { 1, 2, 3, 4, 5 };
+    #endregion
+
+
+
+
 
     class Program
     {
-
         static void Main(string[] args)
         {
 
-
+            
 
 
         }
+
     }
 }
