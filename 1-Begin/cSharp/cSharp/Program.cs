@@ -108,12 +108,28 @@ namespace cSharp
     #endregion
 
     #region Inheritance - allows us to define a class in terms of another class, which makes it easier to create and maintain an application.
+    //Inheritance inheritance = new Inheritance("Thanks for birthday", true, "Albert");
+    //Console.WriteLine(inheritance.ToString());
 
-
+    //Interface
 
     #endregion
 
+    #region Polymorphism
+        //var cars = new List<Car>
+        //        {
+        //            new BMW(200, "Blue", "A4"),
+        //            new BMW(201, "Black", "A5")
+        //        };
 
+        //        foreach (var item in cars)
+        //        {
+        //            Console.WriteLine(item.HP + " " + item.Color);
+
+        //        }
+
+        //Console.ReadLine();
+    #endregion
 
 
 
@@ -121,9 +137,6 @@ namespace cSharp
     {
         static void Main(string[] args)
         {
-
-            
-
 
         }
 
