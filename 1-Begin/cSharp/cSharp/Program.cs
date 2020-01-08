@@ -131,25 +131,61 @@ namespace cSharp
     //Console.ReadLine();
     #endregion
 
+    #region Advance C#
+
+    #region Access Modifier
+    //public class MyClass
+    //{
+    //    protected int age = 18;
+
+    //    protected void MyMethod()
+    //    {
+
+
+    //    }
+    //}
+
+    //class MyClass1 : MyClass
+    //{
+    //    public void Main()
+    //    {
+    //        int i = age;
+    //        MyMethod();
+    //    }
+    //} 
+    #endregion
+
+    #region Struct
+    //it differ from class because it you cannot create contructor  AND implement or more interface
+    // Do not support inheritance
+    //struct Game
+    //{
+    //    public string Name { get; set; }
+    //    public string developer { get; set; }
+    //}
+    #endregion
+
+    #region Garbage Collector
+    //--> .Net Framework provides automatic memory management
+
+
+    #endregion
+
+    #endregion
+
+
+
 
 
     class Program
     {
         static void Main(string[] args)
         {
-            var cars = new List<Car>
-            {
-                new BMW(200, "Blue", "A4"),
-                new BMW(201, "Black", "A5")
-            };
 
-            foreach (var item in cars)
-            {
-                Console.WriteLine(item.HP + " " + item.Color);
 
-            }
 
-            Console.ReadLine();
+
+
         }
 
     }
