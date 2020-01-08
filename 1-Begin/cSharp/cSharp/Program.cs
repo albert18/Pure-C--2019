@@ -116,19 +116,19 @@ namespace cSharp
     #endregion
 
     #region Polymorphism
-        //var cars = new List<Car>
-        //        {
-        //            new BMW(200, "Blue", "A4"),
-        //            new BMW(201, "Black", "A5")
-        //        };
+    //var cars = new List<Car>
+    //        {
+    //            new BMW(200, "Blue", "A4"),
+    //            new BMW(201, "Black", "A5")
+    //        };
 
-        //        foreach (var item in cars)
-        //        {
-        //            Console.WriteLine(item.HP + " " + item.Color);
+    //        foreach (var item in cars)
+    //        {
+    //            Console.WriteLine(item.HP + " " + item.Color);
 
-        //        }
+    //        }
 
-        //Console.ReadLine();
+    //Console.ReadLine();
     #endregion
 
 
@@ -137,7 +137,19 @@ namespace cSharp
     {
         static void Main(string[] args)
         {
+            var cars = new List<Car>
+            {
+                new BMW(200, "Blue", "A4"),
+                new BMW(201, "Black", "A5")
+            };
 
+            foreach (var item in cars)
+            {
+                Console.WriteLine(item.HP + " " + item.Color);
+
+            }
+
+            Console.ReadLine();
         }
 
     }

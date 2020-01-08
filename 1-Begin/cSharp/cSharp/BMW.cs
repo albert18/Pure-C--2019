@@ -11,6 +11,8 @@ namespace cSharp
         private string brand = "BMW";
         public string Model { get; set; }
 
+
+
         public BMW(int hp, string color, string model) : base(hp, color)
         {
             this.Model = model;

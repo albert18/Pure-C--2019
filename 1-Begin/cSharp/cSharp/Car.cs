@@ -11,6 +11,7 @@ namespace cSharp
         public int HP { get; set; }
         public string Color { get; set; }
 
+
         public Car(int hp, string color)
         {
             this.HP = hp;
