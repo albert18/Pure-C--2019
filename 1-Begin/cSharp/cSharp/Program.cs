@@ -240,6 +240,12 @@ namespace cSharp
 
     #endregion
 
+    //-----------------------------------------------------------------------------------------------------C# in Tips and Tricks
+
+    #region Encapsulation
+
+
+    #endregion
 
 
 
@@ -250,10 +256,19 @@ namespace cSharp
 
         static void Main(string[] args)
         {
+            var comp = new Computer();
+            //comp.name = "Albert";
 
+
+
+            //Console.WriteLine("Computer " + comp.GetType());
+            //var isComputer = comp is Computer;
+            //Console.WriteLine(isComputer);
+
+
+            Console.Read();
 
         }
-
 
     }
 }
