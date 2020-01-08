@@ -169,7 +169,74 @@ namespace cSharp
     //--> .Net Framework provides automatic memory management
 
 
+
+
     #endregion
+
+    #region Abstract
+    //Shape[] shapes = { new Cube(4) };
+
+
+    //foreach (Shape shape in shapes)
+    //{
+    //    shape.GetInfo();
+    //    Console.WriteLine("{0} - {1}", shape.Name, shape.Volume());
+
+    //}
+
+    //Console.ReadLine();
+
+
+
+
+    #endregion
+
+
+
+
+    #endregion
+
+    #region Delegate, Anonymous Method
+
+    #region Delegate
+    //public delegate double PerformCalculation(double x, double y);
+
+    //public static double Addition(double a, double b)
+    //{
+    //    Console.WriteLine("a+b is : " + (a + b));
+    //    return a + b;
+    //}
+
+    //static void Main(string[] args)
+    //{
+
+    //    PerformCalculation getSum = Addition;
+    //    getSum(5.0, 8.0);
+
+
+    //} 
+    #endregion
+
+    #region Anonymous
+    //NOTE:   Method run first before anonymous
+    //public delegate string GetTextDelegate(string name);
+
+    //static void Main(string[] args)
+    //{
+    //    GetTextDelegate getTest = delegate (string name)
+    //    {
+    //        return "Hello, " + name;
+    //    };
+    //    Console.WriteLine(getTest("Albert")); ;
+
+
+    //}
+
+
+    #endregion
+
+    //Events and Delegate 
+
 
     #endregion
 
@@ -179,14 +246,14 @@ namespace cSharp
 
     class Program
     {
+
+
         static void Main(string[] args)
         {
 
 
-
-
-
         }
+
 
     }
 }
