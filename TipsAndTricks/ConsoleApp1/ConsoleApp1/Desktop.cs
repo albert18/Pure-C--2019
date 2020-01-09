@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Desktop : Computer
+    class Desktop : Computer, ISleep
     {
         public enum CaseType
         {

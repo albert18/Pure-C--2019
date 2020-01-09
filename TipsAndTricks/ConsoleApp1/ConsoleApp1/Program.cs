@@ -36,16 +36,24 @@ namespace ConsoleApp1
 
             Console.WriteLine("Is computer - " + isComputer);
             Console.WriteLine("Computer name - " + comp.name);
-            Console.WriteLine("Computer case - " + comp.caseType);
+            //Console.WriteLine("Computer case - " + comp.caseType);
 
             comp.TogglePower();
             Console.WriteLine("Computer is on - " + comp.isOn);
 
-            comp.ToggleSleep();
-            Console.WriteLine("Computer is sleeping - " + comp.isSleeping);
+            var sleepComp = comp as ISleep;
 
-            comp.TogglePower();
-            Console.WriteLine("Computer is on - " + comp.isOn);
+            if (sleepComp != null)
+            {
+                sleepComp.ToggleSleep();
+                Console.WriteLine("Computer is sleeping - " + sleepComp.isSleeping);
+
+                comp.TogglePower();
+                Console.WriteLine("Computer is on - " + comp.isOn);
+            }
+
+
+
 
 
             Console.Read();
