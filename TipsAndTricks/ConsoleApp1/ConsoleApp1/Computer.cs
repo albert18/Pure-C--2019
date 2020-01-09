@@ -9,6 +9,8 @@ namespace ConsoleApp1
     class Computer
     {
         protected string _name = "unknown";
+        public bool IsOn { get; private set; }
+
         public string name
         {
             get
@@ -24,6 +26,19 @@ namespace ConsoleApp1
         public Computer(string name)
         {
             this.name = name;
+        }
+
+        public void TurnOn()
+        {
+            IsOn = true;
+
+        }
+
+
+        public void TurnOff()
+        {
+            IsOn = false;
+
         }
     }
 }
