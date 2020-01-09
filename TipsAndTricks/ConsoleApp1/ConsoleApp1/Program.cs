@@ -27,7 +27,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            var comp = new Desktop("Generic Computer");
+            var comp = new Desktop("Generic Computer", Desktop.CaseType.Tower);
+            //var comp = new Laptop("Generic Laptop", 1024, 768);
 
             Console.WriteLine("Computer Type - " + comp.GetType());
 
@@ -35,6 +36,13 @@ namespace ConsoleApp1
 
             Console.WriteLine("Is computer - " + isComputer);
             Console.WriteLine("Computer name - " + comp.name);
+            Console.WriteLine("Computer case - " + comp.caseType);
+
+            comp.TogglePower();
+            Console.WriteLine("Computer is on - " + comp.isOn);
+
+            comp.ToggleSleep();
+            Console.WriteLine("Computer is sleeping - " + comp.isSleeping);
 
             comp.TogglePower();
             Console.WriteLine("Computer is on - " + comp.isOn);
