@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Computer
+    abstract class Computer
     {
-        protected string _name = "unknown";
-        public bool IsOn { get; private set; }
+        protected string _name = "Unknown";
 
+        public bool isOn { get; private set; }
         public string name
         {
             get
@@ -28,17 +28,27 @@ namespace ConsoleApp1
             this.name = name;
         }
 
-        public void TurnOn()
+        protected void TurnOn()
         {
-            IsOn = true;
-
+            isOn = true;
         }
 
-
-        public void TurnOff()
+        protected void TurnOff()
         {
-            IsOn = false;
-
+            isOn = false;
         }
+
+        public void TogglePower()
+        {
+            if (isOn)
+            {
+                TurnOff();
+            }
+            else
+            {
+                TurnOn();
+            }
+        }
+
     }
 }
