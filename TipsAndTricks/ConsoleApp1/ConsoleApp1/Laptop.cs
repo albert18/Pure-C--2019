@@ -8,18 +8,27 @@ namespace ConsoleApp1
 {
     class Laptop : Computer, ISleep
     {
+        private ISleep sleepCOntroller;
+
         public Display display { get; private set; }
 
-        public bool isSleeping => throw new NotImplementedException();
+        public bool isSleeping
+        {
+            get
+            {
+                return sleepCOntroller.isSleeping;
+            }
+        }
 
         public Laptop(string name, int width, int height) : base(name)
         {
             display = new Display(width, height);
+            sleepCOntroller = new SleepController();
         }
 
         public void ToggleSleep()
         {
-            throw new NotImplementedException();
+            sleepCOntroller.ToggleSleep();
         }
     }
 }

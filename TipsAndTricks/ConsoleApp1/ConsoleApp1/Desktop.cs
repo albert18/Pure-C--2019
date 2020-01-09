@@ -8,13 +8,22 @@ namespace ConsoleApp1
 {
     class Desktop : Computer, ISleep
     {
+        private ISleep sleepController;
+
         public enum CaseType
         {
             Tower,
             MiniTower
         }
 
-        public bool isSleeping { get; private set; }
+        public bool isSleeping
+        {
+            get
+            {
+                return sleepController.isSleeping;
+            }
+        }
+
         public CaseType caseType { get; set; }
 
 
@@ -30,6 +39,7 @@ namespace ConsoleApp1
         public Desktop(string name, CaseType caseType) : base(name)
         {
             this.caseType = caseType;
+            sleepController = new SleepController();
         }
 
         public void ToggleSleep()
@@ -39,6 +49,8 @@ namespace ConsoleApp1
             {
                 return;
             }
+
+            sleepController.ToggleSleep();
         }
         public override void TogglePower()
         {
